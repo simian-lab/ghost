@@ -19,9 +19,11 @@
             <p>{{encode title}}</p>
             <p>The post id is {{id}}</p>
             <p>The post url is {{url absolute="true"}}</p>
-            <p>The post tags are {{{tags}}}</p>
+            <p>The post tags are {{{tags separator=" & "}}}</p>
             <p>The author name is {{author.name}}</p>
             <p>The author bio is {{author.bio}}</p>
+
+            {{> my-template}}
 
             <section class="post-content">
             {{! This is how you show all the post content.}}
