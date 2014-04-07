@@ -26,33 +26,41 @@
     </head>
     <body class="{{body_class}}">
 
-        {{! Everything else gets inserted here }}
-        {{{body}}}
+        <form>
+          <input id="search-field" />
+          <input type="submit" value="search">
+        </form>
 
-        <footer class="site-footer">
-            <!-- Do not change the code! -->
-            <a id="foxyform_embed_link_540037" href="http://www.foxyform.com/">foxyform</a>
-            <script type="text/javascript">
-            (function(d, t){
-               var g = d.createElement(t),
-               s = d.getElementsByTagName(t)[0];
-               g.src = "http://www.foxyform.com/js.php?id=540037&sec_hash=2e444d02f71&width=350px";
-               s.parentNode.insertBefore(g, s);
-           }(document, "script"));
-            </script>
-            <!-- Do not change the code! -->
+        <section id="results"></section>
 
-            <script type="text/javascript"> id = 180971; </script>
-            <script type="text/javascript" src="http://kontactr.com/wp.js"></script>
-            
-        </footer>
+      {{! Everything else gets inserted here }}
+      {{{body}}}
 
-        {{! Ghost outputs important scripts and data with this tag }}
-        {{ghost_foot}}
+      <footer class="site-footer">
+        <!-- Do not change the code! -->
+        <a id="foxyform_embed_link_540037" href="http://www.foxyform.com/">foxyform</a>
+        <script type="text/javascript">
+        (function(d, t){
+         var g = d.createElement(t),
+         s = d.getElementsByTagName(t)[0];
+         g.src = "http://www.foxyform.com/js.php?id=540037&sec_hash=2e444d02f71&width=350px";
+         s.parentNode.insertBefore(g, s);
+     }(document, "script"));
+        </script>
+        <!-- Do not change the code! -->
 
-        {{! The main JavaScript file for Casper }}
-        <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-        <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+        <script type="text/javascript"> id = 180971; </script>
+        <script type="text/javascript" src="http://kontactr.com/wp.js"></script>
 
-    </body>
-    </html>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/ghostHunter/jquery.ghostHunter.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>
